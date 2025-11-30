@@ -59,7 +59,13 @@ export default {
       },
     },
 
-
+{
+      name: 'post',
+      displayName: ' مغامرتنا',
+      meta: {
+        icon: 'dashboard',
+      },
+    },
 
   ] as INavigationRoute[],
 }

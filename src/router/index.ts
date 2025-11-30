@@ -109,6 +109,21 @@ const routes: Array<RouteRecordRaw> = [
         path: 'team-edit/:id',
         component: () => import('../pages/admin/team/edit.vue'),
       },
+       {
+        name: 'post',
+        path: 'post',
+        component: () => import('../pages/admin/post/index.vue'),
+      },
+       {
+        name: 'post-create',
+        path: 'post-create',
+        component: () => import('../pages/admin/post/create.vue'),
+      }, {
+        name: 'post-edit',
+        path: 'post-edit/:id',
+        component: () => import('../pages/admin/post/edit.vue'),
+      },
+
 
 
       {

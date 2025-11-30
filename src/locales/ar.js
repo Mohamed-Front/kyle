@@ -587,7 +587,7 @@ export default {
   auth: {
    no_account:"ليس لدي حساب ",
    sing_up:"انشاء حساب ",
-    welcome_to_pharma: "مرحبًا بك في إدارة منطقة التل ",
+    welcome_to_pharma: "مرحبًا بك في إدارة أمارجي  ",
     welcome_description: "نُسهل التواصل بين المستودعات والصيدليات- ابدأ أعمالك بثقة",
     register_as: "التسجيل كـ",
     select_account_type: "اختر نوع حسابك",
