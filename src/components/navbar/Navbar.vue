@@ -7,9 +7,16 @@
       :class="{ 'fixed-nav': isScrolled }"
     >
       <template #right>
-        <div class="left">
-          <h1>{{ translatedRouteName }}</h1>
-        </div>
+         <Button
+            @click="handleLogout"
+            icon="pi pi-sign-out"
+            class="logout-btn mx-2"
+          ></Button>
+           <Button
+            @click="goToWebsite"
+            icon="pi pi-globe"
+
+          ></Button>
       </template>
       <template #left>
         <div class="right flex items-center gap-4">
@@ -20,18 +27,9 @@
             @click="isSidebarMinimized = !isSidebarMinimized"
           />
           <!-- Go to Website Button -->
-          <Button
-            @click="goToWebsite"
-            icon="pi pi-globe"
-            label="الذهاب للموقع"
 
-          ></Button>
           <!-- Logout Button -->
-          <Button
-            @click="handleLogout"
-            icon="pi pi-sign-out"
-            class="logout-btn"
-          ></Button>
+
         </div>
       </template>
     </va-navbar>

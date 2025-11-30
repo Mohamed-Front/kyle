@@ -14,41 +14,7 @@ const routes: Array<RouteRecordRaw> = [
     redirect: { name: 'dashboard' },
   },
 
-   {
-    name: 'home',
-    path: '/',
-    component: () => import('../pages/admin/frontend/pages/home.vue'),
-  },
-  {
-    name: 'map',
-    path: '/map',
-    component: () => import('../pages/admin/frontend/pages/map.vue'),
-  },
-   {
-    name: 'organizational-front',
-    path: '/organizational-front',
-    component: () => import('../pages/admin/frontend/pages/organizational.vue'),
-  },
-  {
-    name: 'complaint',
-    path: '/complaint',
-    component: () => import('../pages/admin/frontend/pages/Complaint.vue'),
-  },
-    {
-    name: 'administrative-structure',
-    path: '/administrative-structure',
-    component: () => import('../pages/admin/frontend/pages/administrative-structure.vue'),
-  },
-  {
-    name: 'about',
-    path: '/about',
-    component: () => import('../pages/admin/frontend/pages/about-us.vue'),
-  },
-   {
-    name: 'not-available',
-    path: '/not-available',
-    component: () => import('../pages/admin/frontend/pages/not-available.vue'),
-  },
+
   {
     name: 'not-found-advanced',
     path: '/404',
@@ -74,26 +40,77 @@ const routes: Array<RouteRecordRaw> = [
         path: 'dashboard',
         component: () => import('../pages/admin/dashboard/Dashboard.vue'),
       },
-      {
-        name: 'roles',
-        path: 'roles',
-        component: () => import('../pages/admin/roles/index.vue'),
+       {
+        name: 'registration',
+        path: 'registration',
+        component: () => import('../pages/admin/registration/index.vue'),
       },
-      {
-        name: 'roles-update',
-        path: 'roles-update/:id',
-        component: () => import('../pages/admin/roles/update.vue'),
+
+       {
+        name: 'registration-show',
+        path: 'registration-show/:id',
+        component: () => import('../pages/admin/registration/show.vue'),
       },
-      {
-        name: 'roles-create',
-        path: 'roles-create',
-        component: () => import('../pages/admin/roles/create.vue'),
+       {
+        name: 'home-banner',
+        path: 'home-banner',
+        component: () => import('../pages/admin/homebanner/index.vue'),
       },
-      {
-        name: 'Permission',
-        path: 'Permission',
-        component: () => import('../pages/admin/Permissions/index.vue'),
+         {
+        name: 'banner-edit',
+        path: 'banner-edit/:id',
+        component: () => import('../pages/admin/homebanner/edit.vue'),
       },
+        {
+        name: 'banner-create',
+        path: 'banner-create',
+        component: () => import('../pages/admin/homebanner/create.vue'),
+      },
+
+     {
+        name: 'products',
+        path: 'products',
+        component: () => import('../pages/admin/products/index.vue'),
+      },
+       {
+        name: 'products-create',
+        path: 'products-create',
+        component: () => import('../pages/admin/products/create.vue'),
+      }, {
+        name: 'products-edit',
+        path: 'products-edit/:id',
+        component: () => import('../pages/admin/products/edit.vue'),
+      },
+       {
+        name: 'games',
+        path: 'games',
+        component: () => import('../pages/admin/games/index.vue'),
+      },
+       {
+        name: 'games-create',
+        path: 'games-create',
+        component: () => import('../pages/admin/games/create.vue'),
+      }, {
+        name: 'games-edit',
+        path: 'games-edit/:id',
+        component: () => import('../pages/admin/games/edit.vue'),
+      },
+       {
+        name: 'team',
+        path: 'team',
+        component: () => import('../pages/admin/team/index.vue'),
+      },
+       {
+        name: 'team-create',
+        path: 'team-create',
+        component: () => import('../pages/admin/team/create.vue'),
+      }, {
+        name: 'team-edit',
+        path: 'team-edit/:id',
+        component: () => import('../pages/admin/team/edit.vue'),
+      },
+
+
       {
         name: 'statistics',
         path: 'users_management',
@@ -103,26 +120,7 @@ const routes: Array<RouteRecordRaw> = [
             path: 'users',
             component: () => import('../pages/admin/users/users.vue'),
           },
-          {
-            name: 'Complaint',
-            path: 'complaint',
-            component: () => import('../pages/admin/complaint/index.vue'),
-          },
-          {
-            name: 'complaint_show',
-            path: 'complaint-show/:id',
-            component: () => import('../pages/admin/complaint/show.vue'),
-          },
-          {
-            name: 'warehouse_request',
-            path: 'warehouse-request',
-            component: () => import('../pages/admin/warehouse-request/index.vue'),
-          },
-          {
-            name: 'warehouse_request_show',
-            path: 'warehouse_request_show/:id',
-            component: () => import('../pages/admin/warehouse-request/show.vue'),
-          },
+
           {
             name: 'user-edit',
             path: 'user-edite/:id',
@@ -140,26 +138,6 @@ const routes: Array<RouteRecordRaw> = [
         path: 'settings',
         children: [
 
-           {
-            name: 'setting',
-            path: 'setting',
-            component: () => import('../pages/admin/settings/update.vue'),
-          },
-          {
-            name: 'contact-us',
-            path: 'contact-us',
-            component: () => import('../pages/admin/contact-us/index.vue'),
-          },
-             {
-            name: 'entities',
-            path: 'entities',
-            component: () => import('../pages/admin/entities/index.vue'),
-          },
-          {
-            name: 'organizational',
-            path: 'organizational',
-            component: () => import('../pages/admin/organizational/index.vue'),
-          },
         ],
       },
       UIRoute,

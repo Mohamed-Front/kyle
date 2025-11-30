@@ -1,15 +1,11 @@
 <template>
-   <div class="w-[55%] mx-auto  mb-4">
-      <a href="/admin/dashboard">
-        <img src="../../../assets/logo.png" alt="Application Logo">
-      </a>
-    </div>
+
   <va-accordion v-model="accordionValue" class="sidebar-accordion va-sidebar__menu__inner" multiple>
 
     <va-collapse v-for="(route, idx) in arr" :key="idx">
       <template #header>
         <va-sidebar-item  :active="isRouteActive(route)"  :to="route.children ? undefined : { name: route.name }">
-          <va-sidebar-item-content v-if="Array.isArray(route.show) && route.show.some(element => showRoutes.includes(element))">            <va-icon :name="route.meta.icon" class="va-sidebar-item__icon" />
+          <va-sidebar-item-content >            <va-icon :name="route.meta.icon" class="va-sidebar-item__icon" />
 
             <va-sidebar-item-title>
               {{ t(route.displayName) }}
@@ -20,7 +16,7 @@
         </va-sidebar-item>
       </template>
       <template  v-for="(child, index) in route.children" :key="index"  >
-        <va-sidebar-item v-if="showRoutes.includes(child.show)" :active="isRouteActive(child)" :to="{ name: child.name }">
+        <va-sidebar-item  :active="isRouteActive(child)" :to="{ name: child.name }">
           <va-sidebar-item-content>
             <div class="va-sidebar-item__icon" />
 

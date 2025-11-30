@@ -47,8 +47,8 @@ pre {
 }
 .p-button,
 .p-button.p-button-success {
-  background-color: #1B8A45 !important;
-  border-color: #1B8A45 !important;
+  background-color: #1d1a1a !important;
+  border-color: #1d1a1a !important;
   color: #fff;
 }
 .paginatorwrapper{
@@ -67,7 +67,7 @@ pre {
 }
 .p-detail{
   background-color: #fbfefe !important;
-  color: green !important;
+  color: #1d1a1a !important;
   border: 0px !important;
 }
 .p-delete{
@@ -111,8 +111,8 @@ pre {
   color: rgb(21, 21, 21) !important;
 }
 .other {
-  background-color: #1B8A45 !important;
-  border-color: #1B8A45 !important;
+  background-color: #1d1a1a !important;
+  border-color: #1d1a1a !important;
   color: #fff;
 }
 .pop {
@@ -121,8 +121,8 @@ pre {
   color: #098071;
 }
 .exite {
-  background-color: #3d9209 !important;
-  border-color: #3d9209 !important;
+  background-color: #1d1a1a !important;
+  border-color: #1d1a1a !important;
   color: red;
 }
 
@@ -137,8 +137,8 @@ pre {
 }
 .new {
 
-  background-color: #1B8A45 !important;
-  border-color: #1B8A45 !important;
+  background-color: #1d1a1a !important;
+  border-color: #1d1a1a !important;
 }
 .p-rating .p-rating-item .p-rating-icon {
   color: rgb(166, 166, 0) !important;
@@ -158,6 +158,9 @@ pre {
 .va-sidebar-item-content{
   color: white;
 
+}
+.p-datatable .p-component .p-datatable-responsive-scroll .p-datatable-striped .p-datatable-gridlines .p-datatable-sm {
+  direction: ltr !important;
 }
 .bord{
 

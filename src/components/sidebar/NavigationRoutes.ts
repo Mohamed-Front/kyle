@@ -14,91 +14,51 @@ export default {
     }
   },
   routes: [
+    // {
+    //   name: 'dashboard',
+    //   displayName: 'navigation.dashboard',
+    //   show: ['list users'],
+    //   meta: {
+    //     icon: 'dashboard',
+    //   },
+    // },
     {
-      name: 'dashboard',
-      displayName: 'navigation.dashboard',
-      show: ['list users'],
+      name: 'registration',
+      displayName: 'طلبات التسجيل',
+      meta: {
+        icon: 'dashboard',
+      },
+    },
+    {
+      name: 'home-banner',
+      displayName: 'البانرات الترويجية',
+      meta: {
+        icon: 'dashboard',
+      },
+    },
+  {
+      name: 'products',
+      displayName: ' المنتجات',
+      meta: {
+        icon: 'dashboard',
+      },
+    },
+{
+      name: 'games',
+      displayName: ' العابي',
       meta: {
         icon: 'dashboard',
       },
     },
 
- {
-      name: 'statistics',
-      displayName: 'navigation.users_management',
-      show: ['list users', 'list permissions', 'list roles'],
-      meta: {
-        icon: 'people',
-      },
-      disabled: true,
-      children: [
-        {
-          name: 'users',
-          displayName: 'navigation.users',
-          show: 'list users',
-          meta: {
-            icon: 'person'
-          }
-        },
-        {
-          name: 'roles',
-          displayName: 'navigation.roles',
-          show: 'list roles',
-          meta: {
-            icon: 'security'
-          }
-        },
-        {
-          name: 'Permission',
-          displayName: 'navigation.permissions',
-          show: 'list permissions',
-          meta: {
-            icon: 'lock'
-          }
-        },
-      ],
-    },
-    {
-      name: 'Complaint',
-      displayName: 'complaints',
-      show: ['list complaints'],
-      meta: {
-        icon: 'dashboard',
-      },
-    },
-    {
-      name: 'contact-us',
-      displayName: 'خدمات التواصل',
-      show: ['list complaints'],
+{
+      name: 'team',
+      displayName: ' الفريق',
       meta: {
         icon: 'dashboard',
       },
     },
 
-    {
-          name: 'entities',
-          displayName: ' ادارة الجهات',
-          show: ['list complaints'],
-          meta: {
-            icon: 'dashboard',
-          },
-        },
-    {
-          name: 'organizational',
-          displayName: 'الهيكل التنظيمي',
-          show: ['list complaints'],
-          meta: {
-            icon: 'dashboard',
-          },
-        },
-         {
-          name: 'setting',
-          displayName: ' الاعدادات',
-          show: ['list complaints'],
-          meta: {
-            icon: 'dashboard',
-          },
-        },
 
 
   ] as INavigationRoute[],
