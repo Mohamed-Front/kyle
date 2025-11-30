@@ -46,7 +46,7 @@ export const useAuthStore = defineStore('Auth', {
           this.token = response.data.data.access_token
           this.authUser = response.data.data.user
           this.userPermissions = response.data.data.user.permissions
-          this.router.push({ name: 'dashboard' })
+          this.router.push({ name: 'team' })
 
 
           // Initialize Pusher Beams
