@@ -1,0 +1,1 @@
+import{_ as a,d as n,i as e,j as _,o as t,c,h as r}from"./index-dab9be7b.js";const d={};function f(o,s){return null}const l=a(d,[["render",f]]),u={class:"dashboard"},h=n({__name:"Dashboard",setup(o){return e(),e(),_(()=>{}),(s,i)=>(t(),c("div",u,[r(l)]))}});export{h as default};
